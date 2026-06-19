@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - KM Logistics</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            background-image: url('back.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            width: 100%;
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: grey;
+        }
+
+        /* Main Section */
+        main {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.45);
+            min-height: 70vh;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-box {
+            background: rgba(0, 0, 0, 0.55);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-item {
+            margin-bottom: 30px;
+        }
+
+        .contact-item h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a:hover {
+            color: lightgreen;
+        }
+
+        /* Logo */
+        .logo-container {
+            margin-top: 40px;
+        }
+
+        .animated-image {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+
+            /* Start as square */
+            border-radius: 0%;
+
+            transition:
+                border-radius 1s ease,
+                transform 0.4s ease,
+                box-shadow 0.4s ease;
+
+            animation: circleReveal 2s forwards;
+        }
+
+        /* Hover Animation */
+        .animated-image:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Circle Animation */
+        @keyframes circleReveal {
+
+            from {
+                border-radius: 0%;
+                transform: rotate(0deg);
+            }
+
+            to {
+                border-radius: 50%;
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Find Your Home</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Learn more about us</a>
+            <a href="packages.html">Packages</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="own account.html">Own account</a>
+            <a href="book your seat.html">Secure Your Seat</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-box">
+
+                <div class="contact-item">
+                    <h3>Email</h3>
+
+                    <p>
+                        <a href="mailto:refilwemokwena99@gmail.com">
+                            refilwemokwena99@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>WhatsApp Number</h3>
+
+                    <p>
+                        <a href="https://wa.me/26775573096" target="_blank">
+                            +267 75573096
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Social Links</h3>
+
+                    <p>
+                        <a href="#">Facebook</a> |
+                        <a href="#">Instagram</a> |
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Location</h3>
+
+                    <p>Gaborone, Botswana</p>
+                </div>
+
+            </div>
+
+            <!-- Logo -->
+            <div class="logo-container">
+
+                <img src="logo.jpeg"
+                     alt="Brand Logo"
+                     class="animated-image">
+
+                <h3 class="mt-4">
+                    Call us, let's go have fun!
+                </h3>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kamol Logistics. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
